@@ -1,9 +1,15 @@
 function HelloWorld (){
-    for(var i = 100; i >= 0; i=i-1){
-            if(i === 0) {
-               document.write(finalmessage);
-               } else {
-                document.write("<p>Hello World</p>");
-               }
-        }   
-}           
+   var content = document.getElementById("output")
+   content.innerHTML = "";
+   for(var i = 0; i<100; i++){
+    content.innerHTML += "<div>Hello World</div>";
+   }
+}
+
+function GoodbyeWorld (){
+   var content = document.getElementById("output")
+   content.innerHTML = "";
+   for(var i = 0; i<100; i++){
+       content.innerHTML += "<div>Goodbye World</div>";
+   }
+}
